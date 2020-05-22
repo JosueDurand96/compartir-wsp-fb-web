@@ -3,6 +3,7 @@ package com.durand.floatingbutton;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.constraintlayout.widget.ConstraintLayout;
 
+import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.content.pm.ResolveInfo;
@@ -23,8 +24,8 @@ public class FacebookActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 //0
-                launchFacebook();
-
+              //  launchFacebook();
+              //  getOpenFacebookIntent(getApplicationContext());
 
                 //1
 //                String YourPageURL = "https://www.facebook.com/manyar.comer";
@@ -39,23 +40,25 @@ public class FacebookActivity extends AppCompatActivity {
 //                }
 
 
-
+             //   launchFacebook();
 
 
                 //2
-//                try {
-//                    Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.facebook.com/manyar.comer"));
-//                    startActivity(intent);
-//                } catch(Exception e) {
-//                    startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.facebook.com/manyar.comer")));
-//                }
+                try {
+                    Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://m.facebook.com/manyar.comer"));
+                    startActivity(intent);
+                } catch(Exception e) {
+                    startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.facebook.com/manyar.comer")));
+                }
             }
         });
     }
 
 
+
     public final void launchFacebook() {
-        final String urlFb = "fb://page/"+"https://www.facebook.com/manyar.comer";
+      //   final String urlFb = "fb://page/"+"1111";
+        final String urlFb = "fb://m.facebook.com/manyar.comer/"+"manyar.comer";
         Intent intent = new Intent(Intent.ACTION_VIEW);
         intent.setData(Uri.parse(urlFb));
 

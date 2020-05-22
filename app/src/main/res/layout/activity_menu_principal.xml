@@ -5,36 +5,76 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MenuPrincipal">
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/buton2"
-        android:layout_width="70dp"
-        android:layout_height="70dp"
-        android:layout_gravity="end|bottom"
-        android:layout_margin="16dp"
-        android:src="@drawable/ic_cloud_black_24dp"
-        android:visibility="invisible"
-        app:backgroundTint="@color/colorManyar"
-        app:elevation="6dp"
-        app:fabSize="mini"
-        app:layout_constraintBottom_toTopOf="@+id/buton1"
-        app:pressedTranslationZ="12dp"
-        tools:layout_editor_absoluteX="43dp" />
+
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/buton3"
-        android:layout_width="70dp"
-        android:layout_height="70dp"
-        android:layout_gravity="end|bottom"
-        android:layout_margin="16dp"
-        android:layout_marginEnd="284dp"
-        android:layout_marginBottom="36dp"
-        android:src="@drawable/ic_close_black_24dp"
+        android:id="@+id/btnCall"
         android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="45dp"
+        android:layout_marginBottom="100dp"
+        android:foregroundGravity="center"
+        android:src="@drawable/ic_call_white_24dp"
         app:backgroundTint="@color/colorManyar"
         app:elevation="6dp"
         app:fabSize="normal"
-        app:layout_constraintBottom_toTopOf="@+id/buton1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:pressedTranslationZ="12dp" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btnFace"
+        android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:layout_marginEnd="45dp"
+        android:layout_marginBottom="95dp"
+        android:src="@drawable/ic_facebook"
+        app:backgroundTint="@color/colorManyar"
+        app:elevation="6dp"
+        app:fabSize="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:pressedTranslationZ="12dp" />
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btnWhatsapp"
+        android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="130dp"
+        android:layout_marginBottom="132dp"
+        android:foregroundGravity="center"
+        android:src="@drawable/ic_whatsapp"
+        app:backgroundTint="@color/colorManyar"
+        app:elevation="6dp"
+        app:fabSize="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:pressedTranslationZ="12dp" />
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btnPageWeb"
+        android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginEnd="130dp"
+        android:layout_marginBottom="132dp"
+        android:foregroundGravity="center"
+        android:src="@drawable/ic_web"
+        app:backgroundTint="@color/colorManyar"
+        app:elevation="6dp"
+        app:fabSize="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+
         app:pressedTranslationZ="12dp" />
 
 
