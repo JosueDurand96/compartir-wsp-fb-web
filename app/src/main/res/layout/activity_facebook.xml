@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".FacebookActivity">
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/buton1"
+        android:id="@+id/btnFb"
         android:layout_width="match_parent"
         android:layout_height="59dp"
         android:layout_marginStart="15dp"
