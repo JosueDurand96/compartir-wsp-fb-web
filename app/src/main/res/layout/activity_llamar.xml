@@ -7,7 +7,7 @@ android:layout_height="match_parent"
 tools:context=".TelefonoActivity">
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/buton1"
+        android:id="@+id/btncall"
         android:layout_width="match_parent"
         android:layout_height="59dp"
         android:layout_marginStart="15dp"
@@ -41,4 +41,26 @@ tools:context=".TelefonoActivity">
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Ingresa el numero"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txtNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="90dp"
+        android:ems="10"
+        android:inputType="phone"
+        android:text="978342756"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
 </androidx.constraintlayout.widget.ConstraintLayout>
