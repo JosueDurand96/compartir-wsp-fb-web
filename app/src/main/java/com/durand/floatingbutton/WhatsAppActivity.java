@@ -30,15 +30,13 @@ public class WhatsAppActivity extends AppCompatActivity {
         btnWsp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String mobileNumber = editText_mobile.getText().toString();
-                String message = editText_msg.getText().toString();
-
                 boolean installed = appInstalledOrNot("com.whatsapp");
 
                 if (installed){
+                    String mobileNumber = editText_mobile.getText().toString();
+                    String message = editText_msg.getText().toString();
                     String toNumber = "+51"+mobileNumber; // contains spaces.
                     toNumber = toNumber.replace("+", "").replace(" ", "");
-
                     Intent sendIntent = new Intent("android.intent.action.MAIN");
                     sendIntent.putExtra("jid", toNumber + "@s.whatsapp.net");
                     sendIntent.putExtra(Intent.EXTRA_TEXT, message);
