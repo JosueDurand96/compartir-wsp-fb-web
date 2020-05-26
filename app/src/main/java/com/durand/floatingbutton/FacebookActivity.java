@@ -15,6 +15,7 @@ import java.util.List;
 
 public class FacebookActivity extends AppCompatActivity {
     ConstraintLayout btnFb;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,31 +24,10 @@ public class FacebookActivity extends AppCompatActivity {
         btnFb.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                //0
-              //  launchFacebook();
-              //  getOpenFacebookIntent(getApplicationContext());
-
-                //1
-//                String YourPageURL = "https://www.facebook.com/manyar.comer";
-//                Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(YourPageURL));
-//                startActivity(browserIntent);
-
-
-//                try {
-//                    intent = new Intent(Intent.ACTION_VIEW, Uri.parse("fb://page/" + pageId));
-//                } catch (Exception e) {
-//                    intent =  new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.facebook.com/" + pageId));
-//                }
-
-
-             //   launchFacebook();
-
-
-                //2
                 try {
                     Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://m.facebook.com/manyar.comer"));
                     startActivity(intent);
-                } catch(Exception e) {
+                } catch (Exception e) {
                     startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.facebook.com/manyar.comer")));
                 }
             }
@@ -55,10 +35,9 @@ public class FacebookActivity extends AppCompatActivity {
     }
 
 
-
     public final void launchFacebook() {
-      //   final String urlFb = "fb://page/"+"1111";
-        final String urlFb = "fb://m.facebook.com/manyar.comer/"+"manyar.comer";
+        //   final String urlFb = "fb://page/"+"1111";
+        final String urlFb = "fb://m.facebook.com/manyar.comer/" + "manyar.comer";
         Intent intent = new Intent(Intent.ACTION_VIEW);
         intent.setData(Uri.parse(urlFb));
 
@@ -69,7 +48,7 @@ public class FacebookActivity extends AppCompatActivity {
                 packageManager.queryIntentActivities(intent,
                         PackageManager.MATCH_DEFAULT_ONLY);
         if (list.size() == 0) {
-           // final String urlBrowser = "https://www.facebook.com/"+pageid;
+            // final String urlBrowser = "https://www.facebook.com/"+pageid;
             final String urlBrowser = "https://www.facebook.com/manyar.comer";
             intent.setData(Uri.parse(urlBrowser));
         }

@@ -1,2 +1,2 @@
-include ':app'
+include ':app', ':ui-components-manyar'
 rootProject.name='Floating Button'

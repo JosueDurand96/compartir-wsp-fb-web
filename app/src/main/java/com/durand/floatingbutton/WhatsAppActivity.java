@@ -56,24 +56,6 @@ public class WhatsAppActivity extends AppCompatActivity {
                 }
 
 
-                // boolean installed = appInstalledOrNot("com.whatsapp");
-                //  if (installed){
-//                    String mobileNumber = editText_mobile.getText().toString();
-//                    String message = editText_msg.getText().toString();
-//                    String toNumber = "+51"+mobileNumber; // contains spaces.
-//                    toNumber = toNumber.replace("+", "").replace(" ", "");
-//                    Intent sendIntent = new Intent("android.intent.action.MAIN");
-//                    sendIntent.putExtra("jid", toNumber + "@s.whatsapp.net");
-//                    sendIntent.putExtra(Intent.EXTRA_TEXT, message);
-//                    sendIntent.setAction(Intent.ACTION_SEND);
-//                    sendIntent.setPackage("com.whatsapp");
-//                    sendIntent.setType("text/plain");
-//                    startActivity(sendIntent);
-                //   Toast.makeText(WhatsAppActivity.this, " whastapp ", Toast.LENGTH_SHORT).show();
-                // }else{
-                //   Toast.makeText(WhatsAppActivity.this, "Instala whastapp amiguito", Toast.LENGTH_SHORT).show();
-                // }
-
             }
         });
     }
